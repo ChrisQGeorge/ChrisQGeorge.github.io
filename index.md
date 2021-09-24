@@ -3,7 +3,18 @@
 
 Welcome to my e-portfolio!
 
-Here you will find links to previous projects and software experiments along with other mixed projects such as sheetgudes and video projects.
+## Authentication_System
+## SNHU CS-499 2021
 
-## [Projects](/projects.md)
+This project involves the refinment of the final project for the class IT-145. This project was the creation of a zoo authentication system for a hypethetial zoo. This was done in java and was made up of a login screen which would allow the entering of a username and password. If the username/password combination was correct, the system would then display one of three text pages related to the user account type.
+More information can be found in the code review below. 
+
+## Code Review
+
+The first step to enhancing this project was performing a code review.
+
+**Video player here**
+[Downloadable Version](CodeReview.mp4)
+
+
 
