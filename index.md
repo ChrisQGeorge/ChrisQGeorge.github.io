@@ -1,5 +1,4 @@
-# Christopher George
-# E-portfolio
+# Christopher George <br /> E-portfolio
 
 Welcome to my e-portfolio!
 
