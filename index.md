@@ -1,6 +1,4 @@
-
-Welcome to my e-portfolio!
-
+ㅤ
 # Authentication_System
 ## SNHU CS-499 2021
 
