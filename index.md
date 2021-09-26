@@ -10,7 +10,7 @@ More information can be found in the code review below.
 The first step to enhancing this project was performing a code review.
 
 **Video player here**
-[Downloadable Version](CodeReview.mp4)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 
 
