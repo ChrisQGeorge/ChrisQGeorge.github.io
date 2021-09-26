@@ -9,8 +9,8 @@ More information can be found in the code review below.
 
 The first step to enhancing this project was performing a code review.
 
-**Video player here**
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+
+[![Watch the video](https://youtu.be/2QkOakAuvMk)
 
 
 
