@@ -1,0 +1,24 @@
+Week 3
+1. Finish register class
+	a.add register functionality to user class
+
+
+
+2.Properly comment files
+	//a.comment Authentication_System.cpp and .h
+	b.comment Login.cpp and .h
+	c.comment Register.cpp and .h
+	d.comment SHA256.cpp and .h
+	e.comment User.cpp and .h
+
+
+
+
+Week 5
+1.set up mongodb database
+
+2.set up crud class
+
+1.Properly comment files
+	b.comment CRUD.cpp and .h
+
