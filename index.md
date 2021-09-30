@@ -1,6 +1,4 @@
-<head>
-  <title>Authentication_System<br>e-portfolio</title>
-</head>
+
 # Authentication_System
 ## SNHU CS-499 2021
 
