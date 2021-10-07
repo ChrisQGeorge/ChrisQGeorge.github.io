@@ -19,9 +19,9 @@ The first step to enhancing this project was performing a code review.
 
 # Artifact Narritive
 
-Name: Zoo Authentication System <br />
-Assignment: 7-1 Final Project <br />
-Origin: IT-145 <br />
+##### Name: Zoo Authentication System <br />
+##### Assignment: 7-1 Final Project <br />
+##### Origin: IT-145 <br />
 This artifact will be used for all three categories of the final project. This project was initially created as an authentication system for a zoo for the final project for IT-145 in 2018. It was written in Java and would allow the user to log in to an account stored on a credentials file as plain text. The system would hash the password given by the user using MD5 and compare that hash to the hash stored on the credentials file associated with a username. The system would then authenticate the user and display a data file with data related to the user's account type (zookeeper, admin, or veterinarian), or the system would reject the login attempt up to three times and finally quit the program after a third failed attempt.
  
 ## Artifact Inclusion
