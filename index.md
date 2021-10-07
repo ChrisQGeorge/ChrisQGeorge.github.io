@@ -11,6 +11,6 @@ The first step to enhancing this project was performing a code review.
 
 
 [![Watch the video](https://img.youtube.com/vi/2QkOakAuvMk/maxresdefault.jpg)](https://youtu.be/2QkOakAuvMk)
-<a id="raw-url" href="http://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Zoo Authentication System Code Review.mp4">Download Video</a>
+<a id="raw-url" href="https://media.githubusercontent.com/media/flywheel11/flywheel11.github.io/master/Zoo Authentication System Code Review.mp4">Download Video</a>
 
 
