@@ -1,0 +1,9 @@
+﻿  Authentication_System.cpp
+C:\Users\chris\source\repos\Authentication_System\Authentication_System\Authentication_System.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  CRUD.cpp
+  Login.cpp
+  Register.cpp
+  SHA256.cpp
+  User.cpp
+  Generating Code...
+  Authentication_System.vcxproj -> C:\Users\chris\source\repos\Authentication_System\x64\Debug\Authentication_System.exe

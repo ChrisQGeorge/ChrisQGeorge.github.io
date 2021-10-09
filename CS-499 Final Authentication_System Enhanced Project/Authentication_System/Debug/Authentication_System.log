@@ -1,0 +1,10 @@
+﻿  Authentication_System.cpp
+C:\Users\chris\Desktop\CS-499 5-2 Authentication_System Enhanced Project\Authentication_System\Authentication_System.cpp(6,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Register.cpp
+  CRUD.cpp
+C:\Users\chris\Desktop\CS-499 5-2 Authentication_System Enhanced Project\Authentication_System\CRUD.cpp(5,10): fatal error C1083: Cannot open include file: 'bsoncxx/json.hpp': No such file or directory
+  crypt.cpp
+  sha256.cpp
+  User.cpp
+  Login.cpp
+  Generating Code...

@@ -1,0 +1,155 @@
+﻿  Authentication_System.cpp
+C:\Users\chris\Desktop\CS-499 5-2 Authentication_System Enhanced Project\Authentication_System\Authentication_System.cpp(6,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Register.cpp
+  CRUD.cpp
+  The contents of <string_view> are available only with C++17 or later.
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(98,14): error C2039: 'basic_string_view': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(24): message : see declaration of 'std'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(98,1): error C2873: 'basic_string_view': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(99,14): error C2039: 'string_view': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(24): message : see declaration of 'std'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(99,1): error C2873: 'string_view': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(129,11): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(96): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(129,23): error C3646: 'key': unknown override specifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(129,26): error C2059: syntax error: '('
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(129,34): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(357,30): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(96): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(357,42): error C2061: syntax error: identifier 'string_view'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(357,52): error C2805: binary 'operator [' has too few parameters
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\view.hpp(90,31): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(96): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\view.hpp(90,43): error C2061: syntax error: identifier 'string_view'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\view.hpp(102,30): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\string_view.hpp(96): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\view.hpp(102,42): error C2061: syntax error: identifier 'string_view'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\view.hpp(102,52): error C2805: binary 'operator [' has too few parameters
+  The contents of <optional> are available only with C++17 or later.
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(83,14): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(24): message : see declaration of 'std'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(83,1): error C2873: 'optional': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(84,14): error C2039: 'nullopt': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(24): message : see declaration of 'std'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(84,1): error C2873: 'nullopt': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(85,14): error C2039: 'make_optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(24): message : see declaration of 'std'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(85,1): error C2873: 'make_optional': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\json.hpp(69,58): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\json.hpp(69,70): error C2065: 'string_view': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\json.hpp(69,70): error C2146: syntax error: missing ')' before identifier 'json'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(85,11): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(85,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(85,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(85,60): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(107,11): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(107,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(107,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(107,62): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(127,11): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(127,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(127,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(127,66): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(147,11): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(147,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(147,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\transaction.hpp(147,73): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(74,17): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(74,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(74,25): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(74,72): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(78,11): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(78,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(78,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\options\client_session.hpp(78,58): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\client_session.hpp(125,40): error C2039: 'optional': is not a member of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\stdx.hpp(21): message : see declaration of 'mongocxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\client_session.hpp(125,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\client_session.hpp(125,48): error C2143: syntax error: missing ',' before '<'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\client_session.hpp(125,91): error C2143: syntax error: missing ')' before '{'
+C:\mongo-cxx-driver\include\mongocxx\v_noabi\mongocxx\client_session.hpp(125,93): error C2059: syntax error: ')'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(137,11): error C2039: 'optional': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(139): message : see reference to class template instantiation 'bsoncxx::v_noabi::view_or_value<View,Value>' being compiled
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(137,19): error C2143: syntax error: missing ';' before '<'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(137,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(137,1): error C2238: unexpected token(s) preceding ';'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(68,51): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(68,84): error C2065: '_value': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(68,84): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(74,11): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(74,39): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(74,49): error C2065: '_value': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(74,49): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(80,9): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(81,17): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(81,27): error C2065: '_value': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(81,27): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(91,11): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(92,17): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(92,27): error C2065: '_value': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(92,27): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(94,30): error C2039: 'nullopt': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(102,9): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(103,17): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(103,27): error C2065: '_value': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(103,27): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(105,30): error C2039: 'nullopt': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(115,34): error C3861: '_value': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(36,71): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(36,82): error C2065: 'string_view': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(36,51): error C2923: 'bsoncxx::v_noabi::view_or_value': 'string_view' is not a valid template type argument for parameter 'View'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(36,97): error C2955: 'bsoncxx::v_noabi::view_or_value': use of class template requires template argument list
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(30): message : see declaration of 'bsoncxx::v_noabi::view_or_value'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(41,40): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(41,51): error C2065: 'string_view': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(41,20): error C2923: 'bsoncxx::v_noabi::view_or_value': 'string_view' is not a valid template type argument for parameter 'View'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(41,67): error C2955: 'bsoncxx::v_noabi::view_or_value': use of class template requires template argument list
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\view_or_value.hpp(30): message : see declaration of 'bsoncxx::v_noabi::view_or_value'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(41,5): error C3881: can only inherit constructor from direct base
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(56,40): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(55,33): error C2065: 'string_view': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(56,20): error C2923: 'bsoncxx::v_noabi::view_or_value': 'string_view' is not a valid template type argument for parameter 'View'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(56,72): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(55,33): error C3861: 'string_view': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(56,20): error C2614: 'bsoncxx::v_noabi::string::view_or_value': illegal member initialization: 'view_or_value' is not a base or member
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(69,40): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(68,33): error C2065: 'string_view': undeclared identifier
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(69,20): error C2923: 'bsoncxx::v_noabi::view_or_value': 'string_view' is not a valid template type argument for parameter 'View'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(69,72): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(68,33): error C3861: 'string_view': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(69,20): error C2614: 'bsoncxx::v_noabi::string::view_or_value': illegal member initialization: 'view_or_value' is not a base or member
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(101,16): error C2039: 'view': is not a member of 'bsoncxx::v_noabi::string::view_or_value'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(36): message : see declaration of 'bsoncxx::v_noabi::string::view_or_value'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(101,32): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\string\view_or_value.hpp(101,43): error C3861: 'string_view': identifier not found
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\array\element.hpp(74,30): error C2039: 'key': is not a member of 'bsoncxx::v_noabi::document::element'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\document\element.hpp(76): message : see declaration of 'bsoncxx::v_noabi::document::element'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\array\element.hpp(74,33): error C4596: 'key': illegal qualified name in member declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\array\element.hpp(74,5): error C2873: 'key': symbol cannot be used in a using-declaration
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\decimal128.hpp(56,31): error C2039: 'string_view': is not a member of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\stdx\optional.hpp(81): message : see declaration of 'bsoncxx::v_noabi::stdx'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\decimal128.hpp(56,24): error C2061: syntax error: identifier 'string_view'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\decimal128.hpp(56,24): error C2535: 'bsoncxx::v_noabi::decimal128::decimal128(void)': member function already defined or declared
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\decimal128.hpp(35): message : see declaration of 'bsoncxx::v_noabi::decimal128::decimal128'
+C:\mongo-cxx-driver\include\bsoncxx\v_noabi\bsoncxx\decimal128.hpp(56,24): fatal error C1003: error count exceeds 100; stopping compilation
+  crypt.cpp
+  sha256.cpp
+  User.cpp
+  Login.cpp
