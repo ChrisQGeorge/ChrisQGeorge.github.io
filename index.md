@@ -53,7 +53,7 @@ All the planned enhancements for this section have been implemented. First, the 
 All the planned enhancements for this section have been implemented. MongoDB database was created to store account credentials. This database was run on a Docker image and can connect to the program on port localhost:27017. The ability to write and read from the database was also implemented. Each account document consists of an id, username, account type, password hash, and password salt, all of which can be read and written to by the program.
  
 ## Process Reflection
-Design and Engineering
+#### Design and Engineering
 While developing this section of the artifact, I ran into very few issues. I went through the old project and started recreating the logic in C++. I also added some new classes, including the registration, login, and CRUD classes. Creating and using classes in C++ compared to Java was a little more complex than I anticipated, but after reading some documentation on classes and header files, the process went smoothly.
 One of the big things I learned was that Java is a lot more secure of a language than I had previously assumed. With Java, there are several built-in security features, such as its built-in cryptographic functions, that I had taken for granted when recreating this project in C++. Because of this, I needed to find an external library with the desired cryptographic features. 
  
