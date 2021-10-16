@@ -67,7 +67,7 @@ First, the original MD5 password hashing algorithm was replaced with the industr
            
 ##### Databases
 A MongoDB database was created to store account credentials. This database was run on a Docker image and can connect to the program on port localhost:27017. The ability to write and read from the database was also implemented. Each account document consists of an id, username, account type, password hash, and password salt, all of which can be read and written to by the program. A test entry to the database can be seen below.
-![User in database](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newUser%UserDatabase.png)
+![User in database](/Pictures/newUser UserDatabase.png)Format: ![Alt Text](User in Database)
 
  
 ### Process Reflection
