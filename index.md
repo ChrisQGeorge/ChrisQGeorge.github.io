@@ -66,7 +66,7 @@ The original program was rewritten in C++ from Java. The program was also writte
 First, the original MD5 password hashing algorithm was replaced with the industry-standard SHA-256 hashing algorithm. Next, password salting was implemented to obscure the password hashes. These password salts are stored with the password hashes in the database. Finally, the ability to interact with information from the database was added, allowing the program to create new documents and read existing documents. This feature enables the user to log in as an existing user and register new accounts.
            
 ##### Databases
-A MongoDB database was created to store account credentials. This database was run on a Docker image and can connect to the program on port localhost:27017. The ability to write and read from the database was also implemented. Each account document consists of an id, username, account type, password hash, and password salt, all of which can be read and written to by the program. A test entry to the database can be seen below.
+A MongoDB database was created to store account credentials. This database was run on a Docker image and can connect to the program on port localhost:27017. The ability to write and read from the database was also implemented. Each account document consists of an id, username, account type, password hash, and password salt, all of which can be read and written to by the program. A test entry to the database can be seen below.<br>
 ![User in database](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newUser%20UserDatabase.png?raw=true)
 
  
