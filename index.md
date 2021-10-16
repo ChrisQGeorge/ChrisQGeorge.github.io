@@ -44,7 +44,7 @@ I created this project as an authentication system for a zoo for the final proje
 I was able to enhance this project in several ways within this category. First, I transferred the project into C++; the original project was written in Java, but porting it over to C++ would simplify its integration into C++ projects. Next, I expanded the project's complexity by adding a registration screen to register new admins and users. The implementation of this can be seen below.
 ![Register User](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newUser%20Register.png?raw=true)<br>
 In the new system, users can register a new account with a unique username and password combination as long as the same username does not currently exist in the database. If a new admin wishes to register, the system requires an existing admin login, as can be seen below.
-![Register Admin](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newAdmin2%Succesful%Registration.png?raw=true)<br>
+![Register Admin](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newAdmin2%20Succesful%20Registration.png?raw=true)<br>
 The error seen in the example above was caused by a user being added to the existing database.
 Finally, I improved the software by patching several security holes. For example, a return statement in the user class existed that would return all stored credentials to anywhere in the program. In addition to this, the file that contains the main class has been streamlined and no longer handles any credentials, and variables that store any passwords are immediately cleared from memory after they are no longer needed. 
 
@@ -67,7 +67,7 @@ First, the original MD5 password hashing algorithm was replaced with the industr
            
 ##### Databases
 A MongoDB database was created to store account credentials. This database was run on a Docker image and can connect to the program on port localhost:27017. The ability to write and read from the database was also implemented. Each account document consists of an id, username, account type, password hash, and password salt, all of which can be read and written to by the program. A test entry to the database can be seen below.
-![User in database](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newUser UserDatabase.png?raw=true)
+![User in database](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/newUser%20UserDatabase.png?raw=true)
 
  
 ### Process Reflection
