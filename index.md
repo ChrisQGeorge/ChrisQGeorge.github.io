@@ -54,7 +54,7 @@ For this category, I was able to enhance the complexity and the security of the 
  
 ##### Databases
 For this section, I enhanced the artifact by essentially turning it into a full-stack application. I created an interface between C++ and MongoDB which allows for the creation and reading of stored account credentials. This interface allows for the reading of previously created accounts to log in and the creation of new entries so that new users can register an account with a new username, account type, password hash, and password salt. This completed program basically amounts to a full-stack application where the MongoDB database acts as a back-end, the C++ program serves as a mid-level, and the console acts as the front-end. This system would be ideal for authenticating users within an office or campus with a central MongoDB server. I also created a MongoDB database that holds user credentials and account information, such as account type (user or admin). The database design and schema can be seen in the following diagram;
-![Database Diagram](https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/DB%diagram.png)
+<img src = "https://raw.githubusercontent.com/flywheel11/flywheel11.github.io/master/Pictures/DB%diagram.png" alt="Database Diagram")
  
  
 ### Objectives
