@@ -91,7 +91,7 @@ Here are a few of my completed projects.
 Email:ChrisQGeorge@gmail.com<br>
 Work Email:C.George2@snhu.edu<br>
 Github:<a id="raw-url" href="https://github.com/flywheel11">Link</a><br>
-Linkedin:<a id="raw-url" href="www.linkedin.com/in/christopher-g-5883b4178">Link</a><br>
+Linkedin:<a href="https://www.linkedin.com/in/christopher-g-5883b4178">Link</a><br>
 
 <br>
 <br>
