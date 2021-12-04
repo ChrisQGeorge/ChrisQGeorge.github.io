@@ -1,0 +1,94 @@
+
+body{
+	background-color:#303841;
+	background-image: linear-gradient(#202426, #1a1d1e);
+	padding:0;
+    margin:0;
+}
+
+h1, h2, p {
+	color:#FF5722;
+}
+
+#wrapper{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+#homeContentWrapper{
+  top:210px;
+  padding-left:15%;
+  padding-right:15%;
+  width:70%;
+  float:center;
+  text-align: center;
+}
+
+#homeContentCell{
+  height: 150px;
+  padding: 20px;
+  width: 150px;
+  background-color: #FF5722;
+  display: inline-block;
+  position:relative;
+}
+
+#portfolioContentWrapper{
+  top:210px;
+  left: 15%;
+  right: 15%;
+  max-width: 80%;
+  position: absolute;
+  text-align: left;
+}
+
+#contactContentWrapper{
+  top:210px;
+  left: 15%;
+  right: 15%;
+  max-width: 80%;
+  position: absolute;
+  text-align: left;
+}
+
+#navWrapper{
+	width:100%;
+	overflow: hidden;
+	margin:0px;
+	top:0px;
+	border-top:1px solid #FF5722;
+	border-bottom:1px solid #FF5722;
+	text-align: center;
+
+}
+
+
+
+.menuButton{
+  padding:20px;
+  margin:20px;
+  border-color: #DE8471;
+  border-width: 1px;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  float:center;
+  font-size: 15px;
+  max-width: 200px;
+  top: 10%;
+  bottom:10%;
+  border: 1px solid #DE8471;
+  background-color:#EEEEEE;
+  
+}
+
+.menuButton, a{
+	color: #FF5722;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+
