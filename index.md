@@ -84,6 +84,10 @@ Here are a few of my completed projects.
 		<h4 style = "font-size: 14px">CS-340 Client/Server</h4>
 		<a href = "https://github.com/flywheel11/Chris-G-CS-340"><image src = "Pictures/CS-340 Thumb.png" style = "border-radius:7px;width:16vw;height:16vw;border-radius:7px;"></image></a>
 	</div>
+	<div style = "float:center;border-radius:7px;border-color:black;border:10px;display:inline-block;margin:30px;">
+		<h4 style = "font-size: 14px">CS-465 Full-Stack Application</h4>
+		<a href = "https://github.com/flywheel11/Full-Stack_Application"><image src = "Pictures/New Added Trip.png" style = "border-radius:7px;width:16vw;height:16vw;border-radius:7px;"></image></a>
+	</div>
 </div>
 
 ### Contact Me
