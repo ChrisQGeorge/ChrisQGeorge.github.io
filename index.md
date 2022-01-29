@@ -1,4 +1,15 @@
 ㅤ
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPXPJGX9XD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPXPJGX9XD');
+</script>
+</head>
 ## Welcome to my e-portfolio!
 
 ### About Me
