@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christopher George — DevOps Engineer. CI/CD pipelines, cloud infrastructure, ERP integrations, and full-stack development. Georgia Tech MSCS.">
+  <title>Christopher George — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPXPJGX9XD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JPXPJGX9XD');
+  </script>
+
+  <style>
+    :root {
+      --bg:        #0b0b14;
+      --surface:   #111120;
+      --surface2:  #181828;
+      --border:    #22223a;
+      --text:      #dde0ee;
+      --muted:     #7070a0;
+      --accent:    #7c5bf0;
+      --accent-lt: #a78bfa;
+      --cyan:      #22d3ee;
+      --green:     #34d399;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-lt); text-decoration: none; transition: color 0.15s; }
+    a:hover { color: var(--cyan); }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: rgba(11, 11, 20, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(34,34,58,0.6);
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 14px;
+      color: var(--accent-lt);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 40px 80px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-label {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--cyan);
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .hero-name {
+      font-size: clamp(42px, 7vw, 76px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: clamp(18px, 3vw, 26px);
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .hero-title span {
+      color: var(--accent-lt);
+      font-weight: 500;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: all 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--accent-lt);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(124, 91, 240, 0.35);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent-lt);
+      transform: translateY(-1px);
+    }
+
+    .hero-scroll {
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-family: var(--mono);
+      letter-spacing: 0.05em;
+    }
+
+    .scroll-line {
+      width: 48px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ─── SECTIONS ─── */
+    section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--cyan);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 40px;
+      letter-spacing: -0.02em;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-text {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.8;
+    }
+
+    .about-text strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ─── SKILLS ─── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 22px;
+      transition: border-color 0.15s;
+    }
+
+    .skill-card:hover { border-color: var(--accent); }
+
+    .skill-card-title {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--accent-lt);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill-tag {
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-family: var(--mono);
+    }
+
+    /* ─── EXPERIENCE ─── */
+    .exp-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+
+    .exp-item:last-child { margin-bottom: 0; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .exp-company {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .exp-period {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .exp-role {
+      font-size: 14px;
+      color: var(--accent-lt);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .exp-stack {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .exp-stack span {
+      color: var(--cyan);
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .exp-bullets li {
+      display: flex;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .exp-bullets li::before {
+      content: '›';
+      color: var(--accent);
+      font-size: 16px;
+      line-height: 1.65;
+      flex-shrink: 0;
+    }
+
+    .exp-bullets li strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ─── PROJECTS ─── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .project-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .project-name a {
+      color: inherit;
+    }
+
+    .project-name a:hover { color: var(--accent-lt); }
+
+    .project-stars {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .project-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .tech-tag {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--cyan);
+      background: rgba(34, 211, 238, 0.06);
+      border: 1px solid rgba(34, 211, 238, 0.15);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* ─── EDUCATION ─── */
+    .edu-items {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .edu-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .edu-degree {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .edu-school {
+      font-size: 14px;
+      color: var(--accent-lt);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .edu-detail {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .edu-year {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-desc {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─── ACCENT LINE ─── */
+    .accent-line {
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent), var(--cyan));
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 14px 20px; }
+      .nav-links { gap: 18px; }
+      #hero { padding: 100px 20px 60px; }
+      section { padding: 60px 20px; }
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">cg.dev</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <p class="hero-label">// hello, world</p>
+  <h1 class="hero-name">Christopher<br>George</h1>
+  <p class="hero-title">
+    <span>DevOps Engineer</span> &nbsp;·&nbsp; Georgia Tech MSCS
+  </p>
+  <p class="hero-desc">
+    I build the infrastructure that ships the code. Three years running DevOps at a manufacturing company — CI/CD, containers, ERP migrations, and whatever else needed doing. I build tools when nothing exists and fix things when everything is on fire.
+  </p>
+  <div class="hero-ctas">
+    <a href="https://github.com/ChrisQGeorge" class="btn btn-primary" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/chrisqgeorge" class="btn btn-ghost" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+    <a href="mailto:Chrisqgeorge@gmail.com" class="btn btn-ghost">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+      Email
+    </a>
+    <a href="https://cgeorge.dev" class="btn btn-ghost">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      cgeorge.dev
+    </a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll to explore
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 / about</div>
+  <h2 class="section-title">Who I Am</h2>
+  <p class="about-text">
+    I'm a DevOps engineer based in western North Carolina with three years of professional experience owning infrastructure, pipelines, and integrations end-to-end. My first job out of college involved inheriting a broken CI/CD system with zero documentation, rebuilding it from scratch, then leading a full ERP migration while still maintaining everything else. I like problems with no clear owner.
+  </p>
+  <br>
+  <p class="about-text">
+    Outside of work, I build tools I actually want to use — mostly around <strong>quantified self</strong>, <strong>automation</strong>, and <strong>homelab infrastructure</strong>. I'm currently working toward an <strong>MS in Computer Science (AI concentration) at Georgia Tech</strong> because I want to understand what's actually happening under the hood of the models everyone's shipping.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">02 / skills</div>
+  <h2 class="section-title">What I Work With</h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-card-title">DevOps &amp; Cloud</div>
+      <div class="skill-tags">
+        <span class="skill-tag">GitLab CI/CD</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Proxmox</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Java</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Frameworks &amp; Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Laravel</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Data &amp; Platforms</div>
+      <div class="skill-tags">
+        <span class="skill-tag">MSSQL</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Acumatica</span>
+        <span class="skill-tag">Odoo</span>
+        <span class="skill-tag">OWASP</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">AWS Services</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Lightsail</span>
+        <span class="skill-tag">S3</span>
+        <span class="skill-tag">Lambda</span>
+        <span class="skill-tag">RDS</span>
+        <span class="skill-tag">API Gateway</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Currently Learning</div>
+      <div class="skill-tags">
+        <span class="skill-tag">ML/AI (GaTech)</span>
+        <span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Terraform</span>
+        <span class="skill-tag">GCP</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">03 / experience</div>
+  <h2 class="section-title">Where I've Worked</h2>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-company">TekTone Sound and Signal</span>
+      <span class="exp-period">Dec 2022 – Present</span>
+    </div>
+    <div class="exp-role">DevOps Engineer <span style="color:var(--muted);font-weight:400;">(promoted from Junior DevOps Developer)</span></div>
+    <div class="exp-stack"><span>GitLab CI/CD</span> · <span>Docker</span> · <span>AWS Lightsail/S3</span> · <span>PHP/Laravel</span> · <span>MSSQL</span> · <span>Linux</span></div>
+    <ul class="exp-bullets">
+      <li><span><strong>Rebuilt a dead CI/CD pipeline from scratch</strong> after complete department turnover — no documentation, no handoff. Re-established automated builds, tests, and deployments, then wrote the recovery docs so the next person wouldn't have to start from zero.</span></li>
+      <li><span>Managed deployment pipelines via <strong>GitLab CI/CD</strong> targeting <strong>AWS Lightsail</strong> for staging and production, with S3 for artifact storage and static assets.</span></li>
+      <li><span>Led a full <strong>ERP migration from a legacy system to Acumatica SaaS</strong> — gap analysis, ISV evaluation, consulting coordination (Net at Work / PROPEL framework), and custom integrations built post-go-live to close remaining capability gaps.</span></li>
+      <li><span>Applied <strong>OWASP Top 10</strong> principles and static analysis to integration and deployment work. Coordinated with stakeholders on infrastructure and security requirements throughout the project lifecycle.</span></li>
+      <li><span>Produced architectural diagrams, deployment runbooks, and support documentation — from scratch, because none existed.</span></li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-company">Southern New Hampshire University</span>
+      <span class="exp-period">Mar 2021 – Dec 2022</span>
+    </div>
+    <div class="exp-role">Peer Tutor · Remote</div>
+    <ul class="exp-bullets">
+      <li><span>Tutored <strong>500+ undergraduate and graduate CS students</strong> across programming, data structures, software engineering, and STEM topics.</span></li>
+      <li><span>Created public-facing educational resources and workshops on CS fundamentals for student support teams.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">04 / projects</div>
+  <h2 class="section-title">Things I've Built</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-card-header">
+        <div class="project-name">
+          <a href="https://github.com/ChrisQGeorge/Open-Everything-App" target="_blank" rel="noopener">Open-Everything-App</a>
+        </div>
+        <span class="project-stars">★ 17</span>
+      </div>
+      <p class="project-desc">
+        Open-source, self-hostable quantified self dashboard. Aggregates personal data from multiple sources into a unified analytics interface. Fully Dockerized — <code style="font-family:var(--mono);font-size:11px;color:var(--cyan);">docker-compose up</code> and it runs. Because your data should be yours.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">REST API</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Open Source</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-card-header">
+        <div class="project-name">
+          <a href="https://github.com/ChrisQGeorge/Monarch-Backfill-Balance-History-From-Transactions" target="_blank" rel="noopener">Monarch Balance Backfill</a>
+        </div>
+        <span class="project-stars">★ 10</span>
+      </div>
+      <p class="project-desc">
+        Python utility that reconstructs account balance history from transaction data for Monarch Money. Solves a real problem for anyone migrating from another budgeting tool with incomplete or missing balance history.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Finance Automation</span>
+        <span class="tech-tag">Monarch API</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-card-header">
+        <div class="project-name">
+          <a href="https://github.com/flywheel11/ChrisG-CS-470" target="_blank" rel="noopener">AWS Full-Stack Application</a>
+        </div>
+        <span class="project-stars" style="color:var(--muted);background:transparent;border-color:transparent;">School</span>
+      </div>
+      <p class="project-desc">
+        Full-stack web application on AWS serverless architecture — API Gateway, Lambda, RDS, S3. Includes a <a href="https://www.youtube.com/watch?v=kPjWALH-5js&t=3s" target="_blank">recorded deep-dive</a> on the serverless design and deployment pipeline decisions.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">AWS Lambda</span>
+        <span class="tech-tag">RDS</span>
+        <span class="tech-tag">S3</span>
+        <span class="tech-tag">Serverless</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-card-header">
+        <div class="project-name">
+          <a href="cs499" target="_blank">C++ Authentication System</a>
+        </div>
+        <span class="project-stars" style="color:var(--muted);background:transparent;border-color:transparent;">Capstone</span>
+      </div>
+      <p class="project-desc">
+        Secure authentication system in C++ with MongoDB backend. SHA-256 password hashing, CRUD operations, and a full test suite with Google Test. Built as a capstone enhancement with real security constraints.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">SHA-256</span>
+        <span class="tech-tag">Google Test</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">05 / education</div>
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-items">
+    <div class="edu-item">
+      <div>
+        <div class="edu-degree">MS, Computer Science</div>
+        <div class="edu-school">Georgia Institute of Technology</div>
+        <div class="edu-detail">Specialization: Artificial Intelligence &nbsp;·&nbsp; In Progress</div>
+      </div>
+      <div class="edu-year">Expected 2026</div>
+    </div>
+    <div class="edu-item">
+      <div>
+        <div class="edu-degree">BS, Computer Science — Summa Cum Laude</div>
+        <div class="edu-school">Southern New Hampshire University</div>
+        <div class="edu-detail">GPA: 3.92 / 4.0 &nbsp;·&nbsp; Coursework: Software Engineering, Application Security, SDLC, Agile Development</div>
+      </div>
+      <div class="edu-year">2021</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">06 / contact</div>
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-inner">
+    <p class="contact-desc">
+      I'm open to new roles in DevOps, platform engineering, and software engineering. If you have something interesting, reach out.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:Chrisqgeorge@gmail.com" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Chrisqgeorge@gmail.com
+      </a>
+      <a href="https://github.com/ChrisQGeorge" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/chrisqgeorge" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span style="font-family:var(--mono);color:var(--muted);">
+    christopher george · built by hand · <a href="https://github.com/ChrisQGeorge/ChrisQGeorge.github.io" style="color:var(--muted);">source</a>
+  </span>
+</footer>
+
+</body>
+</html>
